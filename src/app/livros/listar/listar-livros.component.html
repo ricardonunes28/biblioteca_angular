@@ -14,7 +14,7 @@
                 </a>
             </th>
         </tr>
-        <tr *ngFor='let livro of livros'>
+        <tr *ngFor='let livro of livros'[class.table-success]="livro.disponivel">
             <td [class]="livro">
                 {{ livro.nome }}
             </td>

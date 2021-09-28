@@ -14,8 +14,8 @@ export class ListarLivrosComponent implements OnInit {
   ngOnInit(){
     this.livros = this.listarLivros()
     this.livros = [
-      new Livro(1, "Crepusculo", "João", "abril"),
-      new Livro(2, "Pai rico e pai pobre", "Ricardo", "abril")
+      new Livro(1, "Crepusculo", "João", "abril",true),
+      new Livro(2, "Pai rico e pai pobre", "Ricardo", "abril",false)
     ]
   }
   listarLivros(): Livro []{
